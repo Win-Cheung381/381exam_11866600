@@ -1,0 +1,16 @@
+{
+	"name": "COMPS381F-11866600",
+	"description": "COMPS381F - Take Home Exam",
+	"version": "1.0.0",
+	"dependencies": {
+		"ejs": "*",
+		"exif": "^0.6.0",
+		"express": "*",
+		"formidable": "latest",
+		"mongodb": "3.1"
+	},
+	"scripts": {
+		"start": "node server.js"
+	},
+	"engine": "*"
+}

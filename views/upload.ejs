@@ -1,0 +1,13 @@
+<html>
+<h1>Upload a Photo</h1>
+<p style="color:red;"><%= error%></p>
+    <form action="/uploadFile" method="post" enctype="multipart/form-data">
+        Title<br>
+	 <input type="text" name="title" minlength=1><br><br>
+        Description<br> 
+	<input type="text" name="description" minlength=1><br><br>
+        Photo<br>
+        <input type="file" name="sampleFile"  accept="image/*" required><br><br>
+        <button type="submit">Upload</button>
+    </form>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+        <h1><%=photo.title%></h1>
+	 <p><%=photo.description%></p>
+    <img src=" data:<%=photo.mimetype%>;base64, <%=photo.image%>" style="width:60%">
+    
+ <table>
+    <tr>
+    <td>Make: <%=photo.make %></td>
+    </tr>
+    
+    <tr>
+    <td>Model: <%=photo.model %></td>
+    </tr>
+   
+    <tr>
+    <td>Created on: <%=photo.createdDate %></td>
+    </tr>
+    
+    
+    <tr><td>
+    Location: <%if(have_gps){%>
+	<a href="/map?lon=<%=photo.lon %>&lat=<%=photo.lat %>">Map</a>
+    <%}%></td>
+    </tr>
+
+</table>
+      
+    <br>
+	<a href="upload.ejs"><button>Home</button></a>
+</body>
+
+</html>
